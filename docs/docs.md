@@ -1,24 +1,9 @@
-# cli-template
+# fverify
 
 ## Usage
 > This cli template shows the date and time in the terminal
 
-cli-template
-
-## Description
-
-```
-This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
-This template prints the date or time to the terminal.
-```
-## Examples
-
-```bash
-cli-template date
-cli-template date --format 20060102
-cli-template time
-cli-template time --live
-```
+fverify
 
 ## Flags
 |Flag|Usage|
@@ -30,22 +15,22 @@ cli-template time --live
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion`|Generate the autocompletion script for the specified shell|
-|`cli-template date`|Prints the current date.|
-|`cli-template help`|Help about any command|
-|`cli-template time`|Prints the current time|
+|`fverify completion`|Generate the autocompletion script for the specified shell|
+|`fverify date`|Prints the current date.|
+|`fverify help`|Help about any command|
+|`fverify time`|Prints the current time|
 # ... completion
-`cli-template completion`
+`fverify completion`
 
 ## Usage
 > Generate the autocompletion script for the specified shell
 
-cli-template completion
+fverify completion
 
 ## Description
 
 ```
-Generate the autocompletion script for cli-template for the specified shell.
+Generate the autocompletion script for fverify for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
 ```
@@ -53,17 +38,17 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion bash`|Generate the autocompletion script for bash|
-|`cli-template completion fish`|Generate the autocompletion script for fish|
-|`cli-template completion powershell`|Generate the autocompletion script for powershell|
-|`cli-template completion zsh`|Generate the autocompletion script for zsh|
+|`fverify completion bash`|Generate the autocompletion script for bash|
+|`fverify completion fish`|Generate the autocompletion script for fish|
+|`fverify completion powershell`|Generate the autocompletion script for powershell|
+|`fverify completion zsh`|Generate the autocompletion script for zsh|
 # ... completion bash
-`cli-template completion bash`
+`fverify completion bash`
 
 ## Usage
 > Generate the autocompletion script for bash
 
-cli-template completion bash
+fverify completion bash
 
 ## Description
 
@@ -75,17 +60,17 @@ If it is not installed already, you can install it via your OS's package manager
 
 To load completions in your current shell session:
 
-	source <(cli-template completion bash)
+	source <(fverify completion bash)
 
 To load completions for every new session, execute once:
 
 #### Linux:
 
-	cli-template completion bash > /etc/bash_completion.d/cli-template
+	fverify completion bash > /etc/bash_completion.d/fverify
 
 #### macOS:
 
-	cli-template completion bash > /usr/local/etc/bash_completion.d/cli-template
+	fverify completion bash > $(brew --prefix)/etc/bash_completion.d/fverify
 
 You will need to start a new shell for this setup to take effect.
 
@@ -96,12 +81,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion fish
-`cli-template completion fish`
+`fverify completion fish`
 
 ## Usage
 > Generate the autocompletion script for fish
 
-cli-template completion fish
+fverify completion fish
 
 ## Description
 
@@ -110,11 +95,11 @@ Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
 
-	cli-template completion fish | source
+	fverify completion fish | source
 
 To load completions for every new session, execute once:
 
-	cli-template completion fish > ~/.config/fish/completions/cli-template.fish
+	fverify completion fish > ~/.config/fish/completions/fverify.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -125,12 +110,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion powershell
-`cli-template completion powershell`
+`fverify completion powershell`
 
 ## Usage
 > Generate the autocompletion script for powershell
 
-cli-template completion powershell
+fverify completion powershell
 
 ## Description
 
@@ -139,7 +124,7 @@ Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
 
-	cli-template completion powershell | Out-String | Invoke-Expression
+	fverify completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -151,12 +136,12 @@ to your powershell profile.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion zsh
-`cli-template completion zsh`
+`fverify completion zsh`
 
 ## Usage
 > Generate the autocompletion script for zsh
 
-cli-template completion zsh
+fverify completion zsh
 
 ## Description
 
@@ -168,15 +153,19 @@ to enable it.  You can execute the following once:
 
 	echo "autoload -U compinit; compinit" >> ~/.zshrc
 
+To load completions in your current shell session:
+
+	source <(fverify completion zsh)
+
 To load completions for every new session, execute once:
 
 #### Linux:
 
-	cli-template completion zsh > "${fpath[1]}/_cli-template"
+	fverify completion zsh > "${fpath[1]}/_fverify"
 
 #### macOS:
 
-	cli-template completion zsh > /usr/local/share/zsh/site-functions/_cli-template
+	fverify completion zsh > $(brew --prefix)/share/zsh/site-functions/_fverify
 
 You will need to start a new shell for this setup to take effect.
 
@@ -187,38 +176,38 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... date
-`cli-template date`
+`fverify date`
 
 ## Usage
 > Prints the current date.
 
-cli-template date
+fverify date
 
 ## Flags
 |Flag|Usage|
 |----|-----|
 |`-f, --format string`|specify a custom date format (default "02 Jan 06")|
 # ... help
-`cli-template help`
+`fverify help`
 
 ## Usage
 > Help about any command
 
-cli-template help [command]
+fverify help [command]
 
 ## Description
 
 ```
 Help provides help for any command in the application.
-Simply type cli-template help [path to command] for full details.
+Simply type fverify help [path to command] for full details.
 ```
 # ... time
-`cli-template time`
+`fverify time`
 
 ## Usage
 > Prints the current time
 
-cli-template time
+fverify time
 
 ## Description
 
@@ -233,4 +222,4 @@ You can print a live clock with the '--live' flag!
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 24 November 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 05 November 2023**
