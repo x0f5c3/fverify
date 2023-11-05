@@ -1,4 +1,4 @@
-module github.com/x0f5c3/cli-template
+module github.com/x0f5c3/fverify
 
 go 1.21
 
