@@ -6,6 +6,7 @@ require (
 	github.com/pterm/pcli v0.4.6
 	github.com/pterm/pterm v0.12.69
 	github.com/spf13/cobra v1.8.0
+	github.com/x0f5c3/fverify v0.0.0-20231105015413-a7d609aafc9a
 )
 
 require (

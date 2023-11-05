@@ -85,7 +85,7 @@ To load completions for every new session, execute once:
 
 #### macOS:
 
-	cli-template completion bash > /usr/local/etc/bash_completion.d/cli-template
+	cli-template completion bash > $(brew --prefix)/etc/bash_completion.d/cli-template
 
 You will need to start a new shell for this setup to take effect.
 
@@ -168,6 +168,10 @@ to enable it.  You can execute the following once:
 
 	echo "autoload -U compinit; compinit" >> ~/.zshrc
 
+To load completions in your current shell session:
+
+	source <(cli-template completion zsh)
+
 To load completions for every new session, execute once:
 
 #### Linux:
@@ -176,7 +180,7 @@ To load completions for every new session, execute once:
 
 #### macOS:
 
-	cli-template completion zsh > /usr/local/share/zsh/site-functions/_cli-template
+	cli-template completion zsh > $(brew --prefix)/share/zsh/site-functions/_cli-template
 
 You will need to start a new shell for this setup to take effect.
 
@@ -233,4 +237,4 @@ You can print a live clock with the '--live' flag!
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 24 November 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 05 November 2023**
